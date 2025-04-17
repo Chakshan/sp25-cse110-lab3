@@ -7,6 +7,10 @@
 	--clr-normal: lightgrey;
 }
 
+* {
+	scroll-behavior: smooth;
+}
+
 body {
 	background-color: var(--clr-dark, black);
 	margin: 5%;
@@ -57,4 +61,39 @@ strong {
 
 section li {
 	margin: 0.5lh;
+}
+
+.nav-links {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 0.75em;
+}
+
+.nav-links > li {
+	list-style: none;
+}
+
+.nav-links a {
+	padding: 0.08in;
+	border: var(--clr-sub) solid;
+	margin: 0;
+	border-radius: 1lh;
+}
+
+.nav-links a:hover {
+	border-color: var(--clr-emphasis);
+	color: var(--clr-emphasis);
+}
+
+.nav-links a:active {
+	background-color: var(--clr-emphasis);
+	color: var(--clr-dark);
+}
+
+a {
+	text-decoration: none;
+	transition: color 0.3s ease;
+	transition: border-color 0.3s ease;
 }

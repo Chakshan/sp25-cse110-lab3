@@ -7,8 +7,26 @@
 	--clr-normal: lightgrey;
 }
 
+* {
+	scroll-behavior: smooth;
+}
+
 body {
 	background-color: var(--clr-dark, black);
+	margin: 5%;
+	border-style: solid;
+	border-color: var(--clr-sub);
+	border-width: 2px;
+	border-radius: 20px;
+	padding: 5% 10% 5% 10%;
+}
+
+section {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 0;
+	padding-right: 0;
+	margin: auto;
 }
 
 
@@ -17,18 +35,23 @@ body {
 }
 
 #title {
-	color: var(--clr-main, white)
+	color: var(--clr-main, white);
+	margin: 0 0 0 0;
+	text-align: center;
+	text-decoration: underline solid 2px;
+
+}
+
+#meeting-topic {
+	color: var(--clr-emphasis, red);
+	text-align: center;
 }
 
 .section-title {
 	color: var(--clr-sub, white)
 }
 
-#meeting-topic {
-	color: var(--clr-emphasis, red)
-}
-
-a {
+a, em {
 	color: var(--clr-alt-emph, purple)
 }
 
@@ -36,6 +59,41 @@ strong {
 	color: var(--clr-emphasis)
 }
 
-em {
-	color: var(--clr-alt-emph)
+section li {
+	margin: 0.5lh;
+}
+
+.nav-links {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 0.75em;
+}
+
+.nav-links > li {
+	list-style: none;
+}
+
+.nav-links a {
+	padding: 0.08in;
+	border: var(--clr-sub) solid;
+	margin: 0;
+	border-radius: 1lh;
+}
+
+.nav-links a:hover {
+	border-color: var(--clr-emphasis);
+	color: var(--clr-emphasis);
+}
+
+.nav-links a:active {
+	background-color: var(--clr-emphasis);
+	color: var(--clr-dark);
+}
+
+a {
+	text-decoration: none;
+	transition: color 0.3s ease;
+	transition: border-color 0.3s ease;
 }

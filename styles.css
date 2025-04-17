@@ -1,27 +1,41 @@
+:root {
+	--clr-dark: #232426;
+	--clr-emphasis: hsl(3, 50%, 53%);
+	--clr-alt-emph: color-mix(in srgb, rgb(234, 73, 73) 30%, rgb(89, 150, 242) 70%);
+	--clr-main: color(display-p3 30 20 20 / 10);
+	--clr-sub: rgb(230, 241, 247);
+	--clr-normal: lightgrey;
+}
+
+body {
+	background-color: var(--clr-dark, black);
+}
+
+
 * {
-	color: black;
+	color: var(--clr-normal, grey);
 }
 
-.quote {
-	background-color: rgb(240, 240, 240);
+#title {
+	color: var(--clr-main, white)
 }
 
-#agenda {
-	background-color: lemonchiffon;
+.section-title {
+	color: var(--clr-sub, white)
 }
 
-#leftover {
-	background-color: #f0ffff;
+#meeting-topic {
+	color: var(--clr-emphasis, red)
 }
 
-#subjects {
-	background-color: hsl(19, 100%, 89%);
+a {
+	color: var(--clr-alt-emph, purple)
 }
 
-#others {
-	background-color: color(display-p3 0 0.4 0.1 / 0.2)
+strong {
+	color: var(--clr-emphasis)
 }
 
-#media {
-	background-color: color-mix(in srgb, rgb(230, 190, 190) 50%, rgb(170, 170, 233) 50%);
+em {
+	color: var(--clr-alt-emph)
 }

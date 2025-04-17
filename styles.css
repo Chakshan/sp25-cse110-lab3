@@ -1,0 +1,27 @@
+* {
+	color: black;
+}
+
+.quote {
+	background-color: rgb(240, 240, 240);
+}
+
+#agenda {
+	background-color: lemonchiffon;
+}
+
+#leftover {
+	background-color: #f0ffff;
+}
+
+#subjects {
+	background-color: hsl(19, 100%, 89%);
+}
+
+#others {
+	background-color: color(display-p3 0 0.4 0.1 / 0.2)
+}
+
+#media {
+	background-color: color-mix(in srgb, rgb(230, 190, 190) 50%, rgb(170, 170, 233) 50%);
+}

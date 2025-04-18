@@ -110,49 +110,54 @@
 
 			<h2 class="section-title">Next Meeting Planning</h2>
 			<form id="form">
-			<fieldset>
-				<label>
-					<input type="checkbox" name="confirmation" id="confirmation">
-					Do you plan to attend the next meeting?
-				</label><br>
+				<fieldset>
+					<label>
+						<input type="checkbox" name="confirmation" id="confirmation">
+						Do you plan to attend the next meeting?
+					</label><br>
 
-				<label>
-					<input type="radio" name="participation" value="in-person">
-					In-Person
-				</label>
+					<label>
+						<input type="radio" name="participation" value="in-person">
+						In-Person
+					</label>
 
-				<label>
-					<input type="radio" name="participation" value="virtual">
-					Virtual
-				</label><br>
+					<label>
+						<input type="radio" name="participation" value="virtual">
+						Virtual
+					</label><br>
 
-				<label for="meeting-topic">New Meeting Topic:</label>
-				<input type="text" name="meeting_topic" id="meeting-topic" placeholder="e.g., Planning...">
+					<label for="meeting-topic">New Meeting Topic:</label>
+					<input type="text" name="meeting_topic" id="meeting-topic" placeholder="e.g., Planning...">
+					<br>
+
+					<label for="meeting-date">Date of Next Meeting:</label>
+					<input type="date" name="meeting_date" id="meeting-date">
+				</fieldset>
+
+				<label for="plans">Meeting Plans:</label><br>
+				<textarea name="plans" id="plans" rows="4" cols="50" placeholder="Things to discuss..."></textarea><br>
+
+				<label for="department">Department:</label>
+				<select name="department" id="department">
+					<option value="marketing">Engineering</option>
+					<option value="sales">Sales</option>
+					<option value="engineering">Outreach</option>
+				</select><br>
+
+				<label for="location">Choose a preferred location:</label>
+				<input list="locations" name="location" id="location">
+				<datalist id="locations">
+					<option value="Conference Room A"></option>
+					<option value="Zoom"></option>
+					<option value="Main Office Lounge"></option>
+				</datalist>
 				<br>
 
-				<label for="meeting-date">Date of Next Meeting:</label>
-				<input type="date" name="meeting_date" id="meeting-date">
-			</fieldset>
-
-			<label for="plans">Meeting Plans:</label><br>
-			<textarea name="plans" id="plans" rows="4" cols="50" placeholder="Things to discuss..."></textarea><br>
-
-			<label for="department">Department:</label>
-			<select name="department" id="department">
-				<option value="marketing">Engineering</option>
-				<option value="sales">Sales</option>
-				<option value="engineering">Outreach</option>
-			</select><br>
-
-			<label for="location">Choose a preferred location:</label>
-			<input list="locations" name="location" id="location">
-			<datalist id="locations">
-				<option value="Conference Room A"></option>
-				<option value="Zoom"></option>
-				<option value="Main Office Lounge"></option></datalist><br>
-
-			<button type="submit">Submit</button>
+				<button type="submit">Submit</button>
 			</form>
+			
+			<h2>Bonus Image</h2>
+			<img alt="easter egg" src="assets/easter_egg.png">
 		</footer>
   </body>
 </html>

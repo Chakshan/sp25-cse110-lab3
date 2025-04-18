@@ -63,31 +63,28 @@ section li {
 	margin: 0.5lh;
 }
 
-.nav-links {
+nav {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
-	gap: 0.75em;
+	gap: 0.5em;
+	padding-bottom: 0.5em;
 }
 
-.nav-links > li {
-	list-style: none;
-}
-
-.nav-links a {
+nav a {
 	padding: 0.08in;
 	border: var(--clr-sub) solid;
 	margin: 0;
 	border-radius: 1lh;
 }
 
-.nav-links a:hover {
+nav a:hover {
 	border-color: var(--clr-emphasis);
 	color: var(--clr-emphasis);
 }
 
-.nav-links a:active {
+nav a:active {
 	background-color: var(--clr-emphasis);
 	color: var(--clr-dark);
 }

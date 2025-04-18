@@ -4,6 +4,9 @@
 		<title>Meeting Minutes — Lab 2</title>
     	<meta charset="utf-8">
     	<link rel="icon" href="assets/favicon.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="styles.css">
   	</head>
   	<body>
@@ -12,18 +15,18 @@
 			<h2 id="meeting-topic">Finding our direction</h2>
 			<p><b>Date</b>: 4/2/25</h3>
 			<p><b>Attendees</b>: Chakshan, Jin, Ren</p>
+			<hr>
 			<h3 class="section-title" style="text-align: center;"> Notes Outline</h3>
 			<nav>
-				<ul class="nav-links">
-					<li><a href="#agenda">Agenda</a></li>
-					<li><a href="#leftover">Leftovers</a></li>
-					<li><a href="#subjects">Discussion Topics</a></li>
-					<li><a href="#others">Other</a></li>
-					<li><a href="#form">Form</a></li>
+				<a href="#agenda">Agenda</a>
+				<a href="#leftover">Leftovers</a>
+				<a href="#subjects">Discussion Topics</a>
+				<a href="#others">Other</a>
+				<a href="#form">Form</a>
 				</ul>
 			</nav>
+			<hr>
 		</header>
-		<hr>
 		<main>
 			<section id="agenda">
 				<h2 class="section-title">Agenda</h2>
@@ -35,6 +38,8 @@
 					<li><strong>Consensus</strong></li>
 				</ol>
 			</section>
+			
+			<hr>
 
 			<section id="leftover">
 				<h2 class="section-title">Leftover Items from Previous Meeting</h2>
@@ -45,6 +50,8 @@
 				</ul>
 			</section>
 
+			<hr>
+
 			<section id="subjects">
 				<h2 class="section-title">Subjects of Discussion</h2>
 				<ul>
@@ -53,6 +60,8 @@
 					<li>Keeping up <i>momentum</i></li>
 				</ul>
 			</section>
+
+			<hr>
 
 			<section id="others">
 				<h2 class="section-title">Questions, Comments & Concerns</h2>
@@ -70,14 +79,20 @@
 				</p>
 			</section>
 
+			<hr>
+			
 			<section id="media">
 				<h2 class="section-title">Meeting Media</h2>
-				<img alt="whiteboard picture" src="assets/whiteboard_pic.jpeg">
-				<div>
-					<audio controls src="assets/meeting.mp3"></audio>
-					<br>
+				
+				<div class="meeting-pics">
+					<img alt="whiteboard picture" src="assets/whiteboard_pic.jpeg">
+					<img alt="notes picture" src="assets/notes_pic.png">
+					<img alt="assignment picture" src="assets/assignment_pic.png">
 					<video controls width="500" src="assets/meeting.MOV"></video>
 				</div>
+				<p>Meeting audio</p>
+				<audio controls src="assets/meeting.mp3"></audio>
+					<br>
 			</section>
 
 		</main>
@@ -91,51 +106,58 @@
 				up for success in the future. Let's keep going!
 			</details>
 
+			<hr>
+
 			<h2 class="section-title">Next Meeting Planning</h2>
 			<form id="form">
-			<fieldset>
-				<label>
-					<input type="checkbox" name="confirmation" id="confirmation">
-					Do you plan to attend the next meeting?
-				</label><br>
+				<fieldset>
+					<label>
+						<input type="checkbox" name="confirmation" id="confirmation">
+						Do you plan to attend the next meeting?
+					</label><br>
 
-				<label>
-					<input type="radio" name="participation" value="in-person">
-					In-Person
-				</label>
+					<label>
+						<input type="radio" name="participation" value="in-person">
+						In-Person
+					</label>
 
-				<label>
-					<input type="radio" name="participation" value="virtual">
-					Virtual
-				</label><br>
+					<label>
+						<input type="radio" name="participation" value="virtual">
+						Virtual
+					</label><br>
 
-				<label for="meeting-topic">New Meeting Topic:</label>
-				<input type="text" name="meeting_topic" id="meeting-topic" placeholder="e.g., Planning...">
+					<label for="meeting-topic">New Meeting Topic:</label>
+					<input type="text" name="meeting_topic" id="meeting-topic" placeholder="e.g., Planning...">
+					<br>
+
+					<label for="meeting-date">Date of Next Meeting:</label>
+					<input type="date" name="meeting_date" id="meeting-date">
+				</fieldset>
+
+				<label for="plans">Meeting Plans:</label><br>
+				<textarea name="plans" id="plans" rows="4" cols="50" placeholder="Things to discuss..."></textarea><br>
+
+				<label for="department">Department:</label>
+				<select name="department" id="department">
+					<option value="marketing">Engineering</option>
+					<option value="sales">Sales</option>
+					<option value="engineering">Outreach</option>
+				</select><br>
+
+				<label for="location">Choose a preferred location:</label>
+				<input list="locations" name="location" id="location">
+				<datalist id="locations">
+					<option value="Conference Room A"></option>
+					<option value="Zoom"></option>
+					<option value="Main Office Lounge"></option>
+				</datalist>
 				<br>
 
-				<label for="meeting-date">Date of Next Meeting:</label>
-				<input type="date" name="meeting_date" id="meeting-date">
-			</fieldset>
-
-			<label for="plans">Meeting Plans:</label><br>
-			<textarea name="plans" id="plans" rows="4" cols="50" placeholder="Things to discuss..."></textarea><br>
-
-			<label for="department">Department:</label>
-			<select name="department" id="department">
-				<option value="marketing">Engineering</option>
-				<option value="sales">Sales</option>
-				<option value="engineering">Outreach</option>
-			</select><br>
-
-			<label for="location">Choose a preferred location:</label>
-			<input list="locations" name="location" id="location">
-			<datalist id="locations">
-				<option value="Conference Room A"></option>
-				<option value="Zoom"></option>
-				<option value="Main Office Lounge"></option></datalist><br>
-
-			<button type="submit">Submit</button>
+				<button type="submit">Submit</button>
 			</form>
+			
+			<h2>Bonus Image</h2>
+			<img alt="easter egg" src="assets/easter_egg.png">
 		</footer>
   </body>
 </html>

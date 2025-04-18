@@ -199,3 +199,7 @@ form ~ img {
 textarea {
 	width: 100%;
 }
+
+p:has(span) {
+	color: var(--clr-emphasis)
+}

@@ -40,6 +40,7 @@ section {
 	margin: 0 0 0 0;
 	text-align: center;
 	text-decoration: underline solid 2px;
+	display: block;
 }
 
 #meeting-topic {
@@ -68,8 +69,9 @@ nav {
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
-	gap: 0.5em;
-	padding-bottom: 0.5em;
+	align-content: flex-start;
+	gap: 0.5rem;
+	padding-bottom: 0.5rem;
 }
 
 nav a {
@@ -98,8 +100,11 @@ a {
 .meeting-pics {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-	gap: 1em;
-	margin-bottom: 2em;
+	column-gap: 10px;
+	row-gap: 15px;
+	align-items: top;
+	justify-items: left;
+	margin-bottom: 0.5cm;
 }
 
 .meeting-pics > img, .meeting-pics > video {
@@ -126,15 +131,15 @@ details {
 
 form + h2 {
 	color: var(--clr-alt-emph);
-	display: none
 }
 
 form ~ img {
 	width: 100%;
-	display: none;
+	display: inline;
 	margin-top: 1em;
+	margin-bottom: 0;
+	margin-left: 0;
+	margin-right: 0;
+	border: 2px solid var(--clr-main);
 	border-radius: 30px;
-	border-color: var(--clr-main);
-	border-style: solid;
-	border-width: 2px;
 }

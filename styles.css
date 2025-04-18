@@ -9,6 +9,9 @@
 
 * {
 	scroll-behavior: smooth;
+	color: var(--clr-normal, grey);
+	font-family: "Roboto Slab", serif;
+	
 }
 
 body {
@@ -30,16 +33,13 @@ section {
 }
 
 
-* {
-	color: var(--clr-normal, grey);
-}
+
 
 #title {
 	color: var(--clr-main, white);
 	margin: 0 0 0 0;
 	text-align: center;
 	text-decoration: underline solid 2px;
-
 }
 
 #meeting-topic {

@@ -34,6 +34,14 @@ body {
 	min-width: 300px;
 }
 
+@media (max-width: 500px) {
+	#container {
+		padding: 0;
+		border: none;
+		margin: none;
+	}
+}
+
 section {
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
@@ -112,9 +120,14 @@ a {
 	grid-template-columns: 1fr 1fr;
 	column-gap: 10px;
 	row-gap: 15px;
-	align-items: top;
 	justify-items: left;
 	margin-bottom: 0.5cm;
+}
+
+@media (max-width: 800px) {
+	.meeting-pics {
+		grid-template-columns: 1fr;
+	}
 }
 
 .meeting-pics > img, .meeting-pics > video {
@@ -175,6 +188,12 @@ form ~ img {
 	position: absolute;
 	top: calc(50px - var(--dec-size) / 2);
 	left: 50vw;
+}
+
+@media (max-width: 500px) {
+	#decoration {
+		display: none;
+	}
 }
 
 textarea {
